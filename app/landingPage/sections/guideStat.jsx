@@ -23,17 +23,14 @@ export default function GuidedStatsUI() {
     webinars: 2500
   };
 
-  // Set up intersection observer to detect when component enters and leaves viewport
-  useEffect(() => {
+   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
-        // When entering the viewport
-        if (entry.isIntersecting) {
+         if (entry.isIntersecting) {
           setAnimate(true);
         } 
-        // When leaving the viewport, reset the animation
-        else {
+         else {
           setAnimate(false);
           setCounters({
             individuals: 0,
@@ -47,7 +44,7 @@ export default function GuidedStatsUI() {
       {
         root: null,
         rootMargin: "0px",
-        threshold: 0.1, // Trigger when at least 10% of the element is visible
+        threshold: 0.1, 
       }
     );
 
