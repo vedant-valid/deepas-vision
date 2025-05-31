@@ -1,16 +1,16 @@
+import { Fondamento, Inter } from 'next/font/google';
+import './globals.css';
+import Footer from '@/components/footer';
 
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Footer from "@/components/footer";
- 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const fondamento = Fondamento({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-fondamento',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
 });
 
 export const metadata = {
@@ -21,10 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-      
+      <body className={`${fondamento.variable} ${inter.variable} font-inter antialiased`}>
         {children}
         <Footer />
       </body>

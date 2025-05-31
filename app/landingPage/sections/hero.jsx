@@ -1,65 +1,4 @@
-// "use client";
-// import { useState } from 'react';
-// import Image from 'next/image';
-// import Navbar from "@/components/navbar";
-// import Paper from "../../../public/assets/paper1.png";
 
-
-// export default function DeepasVisionWebsite() {
-//     return (
-//         <div className="relative min-h-screen">
-       
-            
-      
-//             {/* <div className="absolute top-0 left-0 w-full h-16">
-//                 <Image
-//                     src={Paper}
-//                     alt="Torn Paper Top"
-//                     objectFit='cover'
-//                     className='w-full h-full'
-//                 />
-//             </div> */}
-//             <div className="absolute bottom-0 left-0 w-full h-16">
-//                 <Image
-//                     src={Paper}
-//                     alt="Torn Paper Top"
-//                     objectFit='cover'
-//                     className='w-full h-full rotate-180'
-//                 />
-//             </div>
-            
-//             {/* Main content container */}
-//             <div className="relative max-w-7xl mx-auto px-4">
-//                 <Navbar />
-                
-//                 <main className="flex flex-col md:flex-row mt-10 md:mt-20 items-center">
-//                     {/* Left side content */}
-//                     <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 ">
-//                         <h2 className="text-4xl md:text-6xl font-serif text-red-800 mb-4 md:mb-8 text-amber-900">Stuck In A Doubt?</h2>
-//                         <p className="text-xl md:text-2xl text-amber-900 font-normal">
-//                             दौड़ का ये फेरा, कौन सा रास्ता है मेरा?
-//                         </p>
-                        
-//                         {/* Illustration */}
-//                         <div className="mt-12 md:mt-24">
-//                         </div>
-//                     </div>
-                    
-//                     <div className="w-full md:w-1/2">
-//                         <video
-//                             src="/videos/herov.mp4"
-//                             autoPlay
-//                             muted
-//                             loop
-//                             playsInline
-//                             className="w-full h-auto md:h-[80%] object-cover rounded-full max-w-md mx-auto"
-//                         />
-//                     </div>
-//                 </main>
-//             </div>
-//         </div>
-//     );
-// }
 
 "use client";
 import { useEffect, useState } from 'react';
@@ -168,6 +107,8 @@ export default function DeepasVisionWebsite() {
     className="w-full h-auto object-cover max-w-lg mx-auto"
   />
 </div>
+
+
 
 
                 </main>

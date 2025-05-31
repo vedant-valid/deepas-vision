@@ -18,7 +18,7 @@ const VideoReviewSection = () => {
       name: "Sarah Johnson",
       role: "Marketing Director",
       company: "TechCorp",
-      videoUrl: "/videos/review/review1.mp4",
+      videoUrl: "/videos/review/Hoteltaj-Pallavi.mp4",
       review: "This product completely transformed our workflow and exceeded all expectations.",
     },
     {
@@ -180,7 +180,7 @@ const VideoReviewSection = () => {
                   <div className="relative group overflow-hidden rounded-xl shadow-md">
                     <video
                       ref={(el) => (videoRefs.current[index] = el)}
-                      className="w-full h-72 object-cover"
+                      className="w-full h-full object-cover"
                       loop
                       muted
                       preload="metadata"

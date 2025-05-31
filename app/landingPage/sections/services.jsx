@@ -97,7 +97,7 @@ const ServiceCardsCollection = () => {
             title: "Health Problems",
             number: "6",
             items: [
-                "Heart problems (stun)",
+                "Heart problems (stent)",
                 "Diabetes",
                 "Stress",
                 "Eating habits"
