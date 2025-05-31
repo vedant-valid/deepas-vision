@@ -66,7 +66,7 @@ const Footer = () => {
               Deepa's vision
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Unveiling celestial wisdom to guide your life's journey through the stars.
+            Astrology is just a finger pointing at reality.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
@@ -95,7 +95,7 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              {['Home', 'About', 'Stat', 'Contact Us', 'Testimonials'].map((item, index) => (
+              {[ 'Services', 'Products ', '9 Grahas','Testimonials','FAQS'].map((item, index) => (
                 <motion.li
                   key={index}
                   whileHover={{ x: 5 }}
@@ -122,7 +122,7 @@ const Footer = () => {
               Our Services
             </h4>
             <ul className="space-y-3">
-              {['Students & Career', 'Corporate Professionals', 'Health Problem', 'Business', 'Remedial Solutions'].map((item, index) => (
+              {['Students & Career', 'Corporate Professionals', 'Health Problem', 'Business', '& more'].map((item, index) => (
                 <motion.li
                   key={index}
                   whileHover={{ x: 5 }}

@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { ChevronLeft, ChevronRight, Play, Pause, Volume2, VolumeX, Quote } from "lucide-react";
-import Paper from "../../../public/assets/paper1.png";
+import Paper from "../../../public/assets/border.png";
 import Image from "next/image";
 
 const VideoReviewSection = () => {

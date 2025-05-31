@@ -2,7 +2,7 @@
 "use client"
 import { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import Paper from "../../../public/assets/paper1.png";
+import Paper from "../../../public/assets/border.png";
 import Image from "next/image";
 
 import {
@@ -18,31 +18,31 @@ export default function StickyLayout() {
         {
             id: 1,
             title: '1:1 Strategic Session',
-            content: 'A calm, focused one-on-one session rooted in the formula: Strategy + Direction – (Chaos × Doubts). Get your unlimited questions answered with logic and methods.',
+            content: 'By sitting calmly in a 1-1 Discussion which वर्क्स on the formula -Session=Strategy+Direction–(Chaos x Doubts). ',
             icon: <UserCheck className="w-6 h-6 text-red-800" />,
         },
         {
             id: 2,
             title: 'Astrology as a Science',
-            content: 'This isn’t ₹5/min fortune-telling—it’s deep science. Experience an insightful blend of Vedic Astrology, Numerology, and Time Period analysis.',
+            content: 'Answering your unlimited questions+queries with proper logics & मेथड्स. As astrology is not a ₹5/min thing, its science.',
             icon: <BookOpenCheck className="w-6 h-6 text-red-800" />,
         },
         {
             id: 3,
             title: 'The दीक्षा Process',
-            content: 'Dive into a detailed study of your 9 charts, numerology, and timelines to get clarity that goes beyond predictions—towards purpose.',
+            content: 'The दीक्षा involves- Study of your ‘9’ Charts + Numerology + Timeperiods.',
             icon: <BrainCircuit className="w-6 h-6 text-red-800" />,
         },
-        {
-            id: 4,
-            title: 'Clarity Over Confusion',
-            content: 'Replace doubts with direction. Leave the session with actionable insights, emotional calm, and a map of your potential paths.',
-            icon: <Compass className="w-6 h-6 text-red-800" />,
-        },
+        // {
+        //     id: 4,
+        //     title: 'Clarity Over Confusion',
+        //     content: 'Replace doubts with direction. Leave the session with actionable insights, emotional calm, and a map of your potential paths.',
+        //     icon: <Compass className="w-6 h-6 text-red-800" />,
+        // },
         {
             id: 5,
             title: 'From Possibility to Plan',
-            content: 'After a satisfying discussion, we’ll decode the most aligned choices, opportunities, and fields awaiting you.',
+            content: 'After the discussion and a satisfied session,we will लुक among all these choices , opportunities & fields.',
             icon: <Map className="w-6 h-6 text-red-800" />,
         },
     ]);
@@ -86,14 +86,14 @@ export default function StickyLayout() {
                     <div className="relative z-10 text-center max-w-md">
                         <motion.div style={{ y: titleY }}>
                             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-600 animate-in opacity-0">
-                                How It Works
+                            How Deepa’s shiksha works ? 
                             </h1>
                         </motion.div>
 
                         <motion.div style={{ y: subtitleY }} className="space-y-6">
                             <div className="text-left space-y-4 animate-in opacity-0">
                                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                                    With years of experience in <span className="font-semibold text-red-700">वैदिक Astrology</span>, <span className="font-semibold text-red-700">Numerology</span>, and <span className="font-semibold text-red-700">Lal Kitab</span>, we offer <span className="font-semibold">कर्मिक उपाय</span> and guide you toward the right <span className="font-semibold">करियर</span> and <span className="font-semibold">जीवन मार्ग</span> — not through <span className="font-semibold">भय</span>, but with clarity and meaningful solutions to enrich your <span className="font-semibold">जीवन</span>.
+                                    With years of experience in <span className="font-semibold text-red-700">वैदिक Astrology</span>, <span className="font-semibold text-red-700">Numerology</span>, and <span className="font-semibold text-red-700">Lal Kitab</span>, Deepa’s Vision offer <span className="font-semibold">कर्मिक उपाय</span> and guide you toward the right <span className="font-semibold">करियर</span> and <span className="font-semibold">जीवन मार्ग</span> — not through <span className="font-semibold">भय</span>, but with clarity and meaningful solutions to enrich your <span className="font-semibold">जीवन</span>.
                                 </p>
 
                                 <div className="bg-red-50 border-l-4 border-red-600 p-4 rounded-r">

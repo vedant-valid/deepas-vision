@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react';
-import Paper from "../../../public/assets/paper1.png";
+import Paper from "../../../public/assets/border.png";
 import Image from "next/image";
 
 const ServiceCard = ({ title, items, number, category = "The Path" }) => {
@@ -74,25 +74,23 @@ const ServiceCardsCollection = () => {
                 "Foreign settlements",
                 "How long should I stay in the job?"
             ]
-        },
+        },{
+          title: "Relationships & Family",
+          number: "4",
+          items: [
+              "Resolving marriage and relationship issues.",
+              "Family disputes and resolutions.",
+              "StressChildcare planning.",
+          ]
+      },
         {
             title: "Mental Health",
-            number: "4",
+            number: "5",
             items: [
                 "Depression and frustration",
                 "Insomnia",
                 "Lack of confidence and individuality",
                 "Poor decision-making"
-            ]
-        },
-        {
-            title: "Health Problems",
-            number: "5",
-            items: [
-                "Heart problems (stun)",
-                "Diabetes",
-                "Stress",
-                "Eating habits"
             ]
         },
         {
@@ -104,7 +102,25 @@ const ServiceCardsCollection = () => {
                 "Stress",
                 "Eating habits"
             ]
-        }
+        },
+        {
+            title: "Investing",
+            number: "7",
+            items: [
+                "Stock market, Land & property investments.",
+                "Knowing where to invest—stocks, land, gold, or other assets.",
+
+            ]
+        },
+        
+      {
+        title: "Civil Servants",
+        number: "8",
+        items: [
+            "Postings and transfer orders.",
+            "Workplace-related matters.",
+        ]
+    }
     ];
 
     return (

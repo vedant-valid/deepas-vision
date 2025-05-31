@@ -1,8 +1,11 @@
 "use client"
 import { useState, useEffect, useRef } from "react";
 import { Hand } from "lucide-react";
-import Paper from "../../../public/assets/paper1.png";
+import Paper from "../../../public/assets/border.png";
 import Image from "next/image";
+import Pic3 from "../../../public/assets/newborder.png";
+import newf from "../../../public/assets/first.png";
+
 
 export default function GuidedStatsUI() {
   const [animate, setAnimate] = useState(false);
@@ -20,7 +23,7 @@ export default function GuidedStatsUI() {
     students: 2500,
     business: 300,
     countries: 90,
-    webinars: 2500
+    webinars: 250000
   };
 
    useEffect(() => {
@@ -98,13 +101,23 @@ export default function GuidedStatsUI() {
           objectFit="cover"
           className="w-full h-full"
         />
+        
+        {/* <div className="absolute bottom-0 left-4 z-10 w-[170px] md:w-[210px]">
+    <Image
+      src={Pic3}
+      alt="Golden Person Image"
+      className="w-full h-auto object-contain"
+      priority
+    />
+  </div> */}
+        
       </div> 
       <div className={`transition-all duration-1000 ${animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
         <h1 className="text-5xl font-bold mb-12 text-center mt-10">So Far We've Guided...</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
           <div className={`transition-all duration-1000 delay-100 ${animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <div className="text-4xl font-bold text-red-800">{counters.individuals.toLocaleString()}</div>
+            <div className="text-4xl font-bold text-red-800">{counters.individuals.toLocaleString()}+</div>
             <div className="mt-2 text-lg">
               individuals
               <div className="text-sm">(in Relationships, Marriages & Birth issues)</div>
@@ -123,17 +136,17 @@ export default function GuidedStatsUI() {
           
           <div className={`transition-all duration-1000 delay-400 ${animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="text-4xl font-bold text-red-800">{counters.countries.toLocaleString()}+</div>
-            <div className="mt-2 text-lg">clients over 10 countries</div>
+            <div className="mt-2 text-lg">Clients over 10 countries</div>
           </div>
           
           <div className={`transition-all duration-1000 delay-500 ${animate ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-            <div className="text-4xl font-bold text-red-800">{counters.webinars.toLocaleString()} L</div>
-            <div className="mt-2 text-lg">individuals in<div className="text-sm">(Webinars, 1-1 & 1-1 sessions)</div></div>
+            <div className="text-4xl font-bold text-red-800">{counters.webinars.toLocaleString()} +</div>
+            <div className="mt-2 text-lg">individuals in<div className="text-sm">(Webinars, Yt & 1-1 sessions)</div></div>
           </div>
         </div>
         
         <div className="flex justify-end ">
-            <img className="h-42"  src="/assets/hand.png" alt="" />
+            <img className="h-42"  src="/assets/hand1.png" alt="" />
          </div>
       </div>
     </div>
